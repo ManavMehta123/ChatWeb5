@@ -12,11 +12,11 @@ app.use(express.json());
 app.use(cors());
 
 //importing routes
-import userRoutes from "./routes/userRoutes.js";
+
 import chatRoutes from "./routes/chatRoutes.js";
 
 //using routes
-app.use("/api/user", userRoutes);
+
 app.use("/api/chat", chatRoutes);
 
 app.listen(process.env.PORT, () => {
